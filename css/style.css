@@ -1,0 +1,191 @@
+* {
+	padding:0;
+	margin:0;
+}
+
+.menu a {
+	text-decoration:none;
+	color:black;
+}
+
+.menu li {
+	list-style:none;
+}
+
+.menu_feed {
+	background:none;
+	border:none;
+	display:block;
+	margin-bottom:10px;
+	font-family:"Times New Roman", Serif;
+	font-size:16px;
+}
+
+#right {
+	height:100%;
+    flex:1;
+    margin-left:50px;
+    transition-property: margin-left;
+    transition-duration: 0.5s;
+}
+
+html, body, #wrapper, main {
+	height:100%;
+}
+
+#wrapper {
+    flex-flow:row nowrap;
+}
+
+main {
+	
+}
+
+header {
+	height:75px;
+	background-color:lightblue;
+    width:100%;
+    display:block;
+}
+
+header h1 {
+	color:mintcream;
+	text-align:center;
+	padding:17px 0 17px 0;
+	font-size:2em;
+}
+
+input {
+	display:block;
+	margin: 10px 0;
+}
+
+article {
+	padding: 20px 20px 20px 20px;
+	display:block;
+	border-bottom:1px dashed;
+	width:650;
+	margin:0 auto;
+}
+
+article img {
+	display:block;
+	padding:10px 0 20px 0px;
+	max-width:656;
+}
+
+.article-title {
+	text-decoration:none;
+	color:DeepSkyBlue;
+	font-family:arial;
+	font-size:20px;
+}
+
+#password_confirm {
+	display:inline;
+	margin:0;
+}
+
+#user_exists {
+	color: #ff6666;
+}
+
+#login-form{
+    margin:20% 30%;
+}
+
+#login-form p{
+    text-align: center;
+}
+
+#login-form input{
+    margin:10px auto;
+}
+
+#side-menu {
+	float:left;
+	position:fixed;
+	width:50px;
+	height:100%;
+	background-color:aliceblue;
+    overflow:hidden;
+    white-space: nowrap;
+    transition-property: width;
+    transition-duration: 0.5s;
+}
+
+#side-menu ul {
+    display:none;
+    padding:30px 0 0 30px;
+}
+
+#side-menu li {
+	padding-bottom:10px;
+}
+
+#side-menu img {
+    margin:8px;
+}
+
+#side-menu:hover {
+    width:190px;
+}
+
+#side-menu:hover > img{
+    display:none;
+}
+
+#side-menu:hover > ul{
+    display:block;
+}
+
+#side-menu:hover ~ #right{
+    margin-left: 190px;
+}
+
+#add-feed-form{
+    margin-top:100px;
+}
+
+#add-feed-form p{
+    text-align: center;
+    font-size: 1.4em;
+    font-family: arial;
+}
+
+#add-feed-form input[list]{
+    margin:1em auto 1em auto;
+    height:2.5em;
+    width:25em;
+    border-radius: 10px;
+    border:1px black solid;
+    text-align: center;
+    text-indent:1.4em;
+    font-size: 17px;
+}
+
+#add-feed-form input[type="submit"]{
+    margin:0 auto;
+    background-color:lightblue;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid black;
+	cursor:pointer;
+	color:white;
+	font-family:arial;
+	font-size:20px;
+	padding:9px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #128a00;
+}
+
+#add-feed-form input[type="submit"]:hover {
+	background-color:aliceblue;
+    color:black;
+}
+
+#add-feed-form input[type="submit"]:active {
+	position:relative;
+	top:1px;
+}
